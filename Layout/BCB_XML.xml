@@ -1,0 +1,9 @@
+<?xml version=\"1.0\"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">
+		<SOAP-ENV:Body>
+			<getValor xmlns="http://publico.ws.casosdeuso.sgs.pec.bcb.gov.br\">
+				<in1 xsi:type=\"xsd:long\">10</in1>
+				<in2 xsi:type=\"xsd:string\">09/08/2018</in2>
+			</getValor>
+		</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
