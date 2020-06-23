@@ -13,8 +13,11 @@ ler.movimentacoes.POST = function(nome.carteira, dt){
   url = "http://localhost:9455/DownloadReport"
   r = POST(
     url = url, 
-    body = list(name = nome.carteira, 
-                date = format(dt, "%Y-%m-%d")))
+    body = list(
+      name = nome.carteira, 
+      date = format(dt, "%Y-%m-%d")
+    )
+  )
   
   txt = content(r, as = "text", encoding = "UTF-8")
   
@@ -22,3 +25,6 @@ ler.movimentacoes.POST = function(nome.carteira, dt){
   dados$data = as.Date(dados$data, "%Y-%m-%d")
   return(dados)
 }
+
+# Jeito mais ilegível o possível
+teste = read.csv2(text = content(POST(url = "", body = list(name = "", date = format(dt, "%Y-%m-%d"))), as = "text", encoding = "UTF-8"), stringsAsFactors = F)
